@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'UBUNTU'}
+    agent {label 'REDHAT'}
     triggers {
         pollSCM('H * * * *')
     }
