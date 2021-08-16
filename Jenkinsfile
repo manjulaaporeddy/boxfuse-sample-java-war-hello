@@ -24,7 +24,7 @@ pipeline {
         stage('ansible') {
             agent{label 'ANSIBLE'}
             steps {
-               sh 'cd deployment && ansible-playbook -i hosts deploy.yaml'
+               sh 'cd Deployment && ansible-playbook -i hosts deploy.yaml'
             }
         } 
     }               
