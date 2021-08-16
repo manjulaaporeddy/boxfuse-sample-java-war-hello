@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'ANSIBLE'}
+    agent {label 'UBUNTU'}
     triggers {
         pollSCM('H * * * *')
     }
@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('SCM'){
             steps {
-                git branch: "${params.BRANCH}", url: 'https://github.com/manjulaaporeddy/game-of-life.git'
+                git branch: "${params.BRANCH}", url: 'https://github.com/manjulaaporeddy/boxfuse-sample-java-war-hello.git'
             }    
         }
         stage('build'){
