@@ -3,7 +3,7 @@
  become: true
  tasks:
    -name: copy war file to tomcat
-   copy: 
+    copy: 
        src: /opt/playbooks/webapp.war
        dest: /opt/tomcat/webapps
 
